@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=VT323&display=swap");
+
 html,
 body {
   margin: 10;
   padding: 10;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "VT323", monospace;
+  text-align: center;
 }
 
 .grid {
@@ -9,9 +14,9 @@ body {
   flex-wrap: wrap;
   width: 200px;
   height: 200px;
-  margin: 0;
+  margin: auto;
   padding: 0;
-  border: solid 2px rgb(42, 145, 163);
+  border: solid 2px rgb(35, 36, 37);
 }
 
 .grid div {
@@ -26,9 +31,19 @@ body {
 
 .snake {
   background-color: rgb(119, 172, 119);
+  transition: background-color 0.1s linear;
 }
 
 .apple {
   background-color: blue;
-  border-radius: solid 3px black;
+}
+
+button {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "VT323", monospace;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: aqua;
 }
